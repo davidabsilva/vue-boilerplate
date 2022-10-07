@@ -1,7 +1,7 @@
 <script setup lang="jsx">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "../components/HelloWorld.vue";
+import Counter from "../components/Counter.vue";
 </script>
 
 <template>
@@ -14,7 +14,7 @@ import HelloWorld from "../components/HelloWorld.vue";
       />
     </a>
   </div>
-  <HelloWorld msg="Vite + Vue + AntD + Vue-i18n" />
+  <Counter msg="Vite + Vue + Vue-i18n + Vuex + AntD" />
 </template>
 
 <script lang="jsx">
@@ -25,7 +25,7 @@ export default {
       links: [
         {
           link: "https://vitejs.dev",
-          logo: "/icon.svg",
+          logo: "/vite.svg",
           alt: "Vite",
           class: "",
         },
@@ -36,16 +36,22 @@ export default {
           class: "vue",
         },
         {
-          link: "https://antdv.com/docs/vue/introduce",
-          logo: "/antd-vue.svg",
-          alt: "Ant design vue",
-          class: "antd",
-        },
-        {
           link: "https://kazupon.github.io/vue-i18n/",
           logo: "/vue-i18n.svg",
           alt: "Vue i18n",
           class: "i18n",
+        },
+        {
+          link: "https://v3.vuex.vuejs.org/",
+          logo: "/vue.svg",
+          alt: "Vuex",
+          class: "vuex",
+        },
+        {
+          link: "https://antdv.com/docs/vue/introduce",
+          logo: "/antd-vue.svg",
+          alt: "Ant design vue",
+          class: "antd",
         },
       ],
     };
@@ -68,6 +74,9 @@ export default {
   filter: drop-shadow(0 0 1.5em #1890ff);
 }
 .logo.i18n:hover {
+  filter: drop-shadow(0 0 1.5em #42b883);
+}
+.logo.vuex:hover {
   filter: drop-shadow(0 0 1.5em #42b883);
 }
 </style>

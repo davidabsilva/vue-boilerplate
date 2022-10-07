@@ -1,7 +1,7 @@
 <script setup lang="jsx">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
-import HelloWorld from "../components/HelloWorld.vue";
+import Counter from "../components/Counter.vue";
 </script>
 
 <template>
@@ -10,7 +10,7 @@ import HelloWorld from "../components/HelloWorld.vue";
       <img src="/vue.svg" class="logo" alt="Vue-router logo" />
     </a>
   </div>
-  <HelloWorld msg="Vue-router" />
+  <Counter msg="Vue-router" />
 </template>
 
 <script lang="jsx">
