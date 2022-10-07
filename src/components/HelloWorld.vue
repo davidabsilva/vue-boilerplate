@@ -2,25 +2,31 @@
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <Button type="button" @click="count++">count is {{ count }}</Button>
-    <p>
-      Edit
-      <code>components/HelloWorld.vue</code> to test HMR
-    </p>
+    <Button type="button" @click="count++">
+      {{ $t('helloWorld.count-is', { number: count }) }}
+    </Button>
+    <p v-html="$t('helloWorld.test-hmr')"></p>
   </div>
 
-  <p>
-    Check out
-    <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
-      >create-vue</a
-    >, the official Vue + Vite starter
-  </p>
-  <p>
-    Install
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank">Volar</a>
-    in your IDE for a better DX
-  </p>
-  <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
+  <i18n-t keypath="helloWorld.check-out" tag="p">
+    <template v-slot:action>
+      <a
+        href="https://vuejs.org/guide/quick-start.html#local"
+        target="_blank"
+        >{{ $t('helloWorld.create-vue') }}</a
+      >
+    </template>
+  </i18n-t>
+
+  <i18n-t keypath="helloWorld.install-to-ide" tag="p">
+    <template v-slot:action>
+      <a href="https://github.com/johnsoncodehk/volar" target="_blank">{{
+        $t('helloWorld.volar')
+      }}</a>
+    </template>
+  </i18n-t>
+
+  <p class="read-the-docs">{{ $t('helloWorld.read-the-docs') }}</p>
 </template>
 
 <script setup>

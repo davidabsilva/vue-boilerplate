@@ -1,1 +1,13 @@
-{}
+{
+  "helloWorld": {
+    "count-is": "count is {number}",
+    "test-hmr": "Edit <code>components/HelloWorld.vue</code> to test HMR",
+    "read-the-docs": "Click on the Vite and Vue logos to learn more",
+
+    "check-out": "Check out {action}, the official Vue + Vite starter",
+    "create-vue": "create-vue",
+
+    "install-to-ide": "Install {action} in your IDE for a better DX",
+    "volar": "Volar"
+  }
+}
