@@ -2,10 +2,7 @@
   "helloWorld": {
     "count-is": "contagem é {number}",
     "test-hmr": "Edita <code>components/HelloWorld.vue</code> para testar HMR",
-    "read-the-docs": "Clique nos logos do Vite e Vue para aprender mais",
-
-    "check-out": "Verifique {action}, o inicializador oficial do Vue + Vite",
-    "create-vue": "create-vue",
+    "read-the-docs": "Clique nos logos para aprender mais",
 
     "install-to-ide": "Instala {action} no teu IDE para uma melhor DX",
     "volar": "Volar"

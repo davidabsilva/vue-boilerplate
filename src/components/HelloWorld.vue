@@ -5,18 +5,7 @@
     <Button type="button" @click="count++">
       {{ $t('helloWorld.count-is', { number: count }) }}
     </Button>
-    <p v-html="$t('helloWorld.test-hmr')"></p>
   </div>
-
-  <i18n-t keypath="helloWorld.check-out" tag="p">
-    <template v-slot:action>
-      <a
-        href="https://vuejs.org/guide/quick-start.html#local"
-        target="_blank"
-        >{{ $t('helloWorld.create-vue') }}</a
-      >
-    </template>
-  </i18n-t>
 
   <i18n-t keypath="helloWorld.install-to-ide" tag="p">
     <template v-slot:action>
